@@ -19,27 +19,6 @@ Unsupervised clustering (KMeans) for exploratory analysis
 
 Block-level entropy analysis and per-/24 subnet evaluation
 
-🗂 Project Structure
-graphql
-Copy
-Edit
-.
-├── data/
-│   ├── chunk*.csv              # Raw ICMP probe files
-│   └── aggregate.csv           # Final per-IP feature CSV
-│
-├── scripts/
-│   ├── process_raw.py          # Chunked feature aggregation from probe data
-│   ├── label_cleanup.py        # Label sanitization and mapping
-│   ├── clustering_analysis.ipynb  # KMeans + PCA + cluster visualizations
-│   ├── classify_lightgbm.py    # Model training, feature encoding, eval
-│   ├── misclassification_analysis.py  # DHCP/NAT false negative deep dive
-│   └── block_entropy.py        # Mixed /24 block detection via entropy
-│
-├── figures/                    # Saved figures for paper
-├── results/                    # Logs, model outputs
-├── LICENSE
-└── README.md
 📦 Dependencies
 Python 3.9+
 
